@@ -50,6 +50,9 @@ Module.directive('datePicker', ['datePickerConfig', 'datePickerUtils', function 
       var step = parseInt(attrs.step || datePickerConfig.step, 10);
       var partial = !!attrs.partial;
 
+      var before = attrs.before;
+      var after = attrs.after;
+      
       //if ngModel, we can add min and max validators
       if(ngModel)
       {
