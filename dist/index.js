@@ -655,7 +655,7 @@ angular.module("datePicker").run(["$templateCache", function($templateCache) {
     "\n" +
     "      <tr ng-repeat=\"week in weeks\">\r" +
     "\n" +
-    "        <td ng-repeat=\"day in week\" ng-class=\"{'after':isAfter(day),'before':isBefore(day)}>\r" +
+    "        <td ng-repeat=\"day in week\" ng-class=\"{'after':isAfter(day),'before':isBefore(day)}\">\r" +
     "\n" +
     "          <span\r" +
     "\n" +
