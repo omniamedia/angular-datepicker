@@ -637,7 +637,7 @@ angular.module("datePicker").run(["$templateCache", function($templateCache) {
     "\n" +
     "        <th ng-click=\"prev()\">&lsaquo;</th>\r" +
     "\n" +
-    "        <th colspan=\"5\" class=\"switch\" ng-click=\"setView('month')\" ng-bind=\"date|date:'yyyy MMMM'\"></th>\r" +
+    "        <th colspan=\"5\" class=\"switch\" ng-click=\"setView('month')\" ng-bind=\"date|date:'MMMM yyyy'\"></th>\r" +
     "\n" +
     "        <th ng-click=\"next()\">&rsaquo;</i></th>\r" +
     "\n" +
