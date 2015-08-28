@@ -108,14 +108,14 @@ angular.module('datePicker').factory('datePickerUtils', function(){
       date = new Date(date);
       // omniamedia - by pass fixed time hours & minutes 07:00
       date.setHours(model.getHours(), model.getMinutes(), model.getSeconds(), model.getMilliseconds());
-      return model && model.getTime() >= date.getTime();
+      return model && model.getTime() > date.getTime();
     },
     isBefore : function(model, date) {
       model = (model !== undefined) ? new Date(model) : model;
       date = new Date(date);
       // omniamedia - by pass fixed time hours & minutes 07:00
       date.setHours(model.getHours(), model.getMinutes(), model.getSeconds(), model.getMilliseconds());
-      return model.getTime() <= date.getTime();
+      return model.getTime() < date.getTime();
     },
     isSameYear :   function(model, date) {
       model = (model !== undefined) ? new Date(model) : model;
